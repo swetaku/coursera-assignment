@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+        <head>
+            <title>Angular assignment</title>
+            
+            <link rel="stylesheet" type="text/css" href="app.css">
+        </head>
+    
+        <body ng-controller="LunchCheckController">
+            <div>
+                Enter the items you would like to have for lunch :-
+                <br/><br/>
+                <input type="text" ng-model="lunchItems">NOTE: ",," or " " is considered as an empty element.
+                <br/>
+                <span id="{{a}}">{{msg}}</span>
+                <br/><br/>
+                <input type="button" ng-click="checkItemCount();" value="Check if Too Much">
+            </div>
+            <script src="angular.min.js"></script>
+            <script src="app.js"></script>
+        </body>
+</html>
